@@ -1,4 +1,4 @@
-# NBClassifierTuningAndAnalysis
+# Naive Bayes Classifier Project
 
 ## Project Goal
 The aim of this project is to build a Naive Bayes classifier from scratch, fine-tune the model to find the best estimator, and analyse the performance of the estimators. The process involved understanding the intricacies of the algorithm and applying it to a real-world dataset.
@@ -15,3 +15,6 @@ The dataset, consisting of research paper abstracts, was sourced from Kaggle ([R
 
 ## Usage
 Begin with `NaiveBayesPerformanceAnalysis.ipynb` to understand the workflow. Ensure the `science_field_dataset.csv` is in the working directory and requisite Python packages are installed. The supplementary scripts `text_flattener.py` and `model_calculator.py` are incorporated within the notebook to facilitate certain functions.
+
+## Contact
+Email: christopherjthomaswork@gmail.com
