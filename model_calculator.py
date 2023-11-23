@@ -1,3 +1,9 @@
+"""
+This module is designed to determine the optimal amount of models to search through in a Random Search process.
+It considers the desired properties such as the top percentile of models, and the percentage guarantee for finding a
+suitable model.
+"""
+
 from math import log, exp
 import numpy as np
 from matplotlib import pyplot as plt
@@ -115,19 +121,3 @@ class ModelCalculator:
         plt.grid()
         plt.legend()
         plt.show()
-
-
-if __name__ == "__main__":
-    N_ = 7056  # total possible models
-    t_ = 0.001  # top percentage models we'd like
-    g_ = 0.900  # probability guaranteed we'd get the top percentage model
-
-    calc = ModelCalculator(N_, t_, g_)
-    res = calc.calculate_result()
-
-    print(f"If we have {N_} possible models,\n"
-          f"and we want a top {t_ * 100}% performing model,\n"
-          f"with a certainty of {g_ * 100}%,\n"
-          f"then we will need to search {res} models.")
-
-    # calc.plot_results(include_line_of_best_fit=False)
